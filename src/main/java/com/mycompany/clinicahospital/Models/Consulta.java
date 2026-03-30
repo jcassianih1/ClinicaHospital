@@ -13,7 +13,7 @@ public class Consulta {
     private String fecha;
     private String motivo;
     private String diagnostico;
-
+    private int duracionMinutos;
     public Consulta() {
     }
 
@@ -21,6 +21,7 @@ public class Consulta {
         this.fecha = fecha;
         this.motivo = motivo;
         this.diagnostico = diagnostico;
+        this.duracionMinutos = duracionMinutos;
     }
 
     public String getFecha() {
@@ -45,6 +46,14 @@ public class Consulta {
 
     public void setDiagnostico(String diagnostico) {
         this.diagnostico = diagnostico;
+    }
+    
+    public int getDuracionMinutos() {
+        return duracionMinutos;
+    }
+
+    public void setDuracionMinutos(int duracionMinutos) {
+        this.duracionMinutos = duracionMinutos;
     }
 
     @Override

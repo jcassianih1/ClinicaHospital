@@ -4,6 +4,7 @@
  */
 package com.mycompany.clinicahospital.Models;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -14,7 +15,7 @@ public class Hospital {
     
     private String nombre;
     private String ciudad;
-    private List<Consulta> consultas;
+    private ArrayList<Consulta> consultas;
 
     public Hospital() {
     }
@@ -22,7 +23,7 @@ public class Hospital {
     public Hospital(String nombre, String ciudad, List<Consulta> consultas) {
         this.nombre = nombre;
         this.ciudad = ciudad;
-        this.consultas = consultas;
+        this.consultas = new ArrayList<>();
     }
 
     public String getNombre() {
@@ -41,11 +42,11 @@ public class Hospital {
         this.ciudad = ciudad;
     }
 
-    public List<Consulta> getConsultas() {
+    public ArrayList<Consulta> getConsultas() {
         return consultas;
     }
 
-    public void setConsultas(List<Consulta> consultas) {
+    public void setConsultas(ArrayList<Consulta> consultas) {
         this.consultas = consultas;
     }
 
