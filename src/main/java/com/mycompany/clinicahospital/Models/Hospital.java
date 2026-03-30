@@ -20,7 +20,7 @@ public class Hospital {
     public Hospital() {
     }
 
-    public Hospital(String nombre, String ciudad, List<Consulta> consultas) {
+    public Hospital(String nombre, String ciudad ) {
         this.nombre = nombre;
         this.ciudad = ciudad;
         this.consultas = new ArrayList<>();
@@ -49,7 +49,14 @@ public class Hospital {
     public void setConsultas(ArrayList<Consulta> consultas) {
         this.consultas = consultas;
     }
+    
+    public void registrarConsulta(Consulta c) {
+        consultas.add(c);
+    }
 
+    public Consulta getConsulta(int i) { 
+        return consultas.get(i); 
+    }
     @Override
     public String toString() {
         return "Hospital{" + "nombre=" + nombre + ", ciudad=" + ciudad + ", consultas=" + consultas + '}';

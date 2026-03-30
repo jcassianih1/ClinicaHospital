@@ -6,6 +6,7 @@ package com.mycompany.clinicahospital;
 
 import com.mycompany.clinicahospital.Models.Consulta;
 import com.mycompany.clinicahospital.Models.Hospital;
+import com.mycompany.clinicahospital.Models.Medico;
 
 /**
  *
@@ -20,13 +21,13 @@ public class ClinicaHospital {
         Hospital h = new Hospital("Clinica Santa Maria", "Cartagena");
 
         // 2. Registrar 3 consultas
-        h.registrarConsulta(new Consulta("20/03/2026", "Migrania", "Tratamiento con reposo",    30));
-        h.registrarConsulta(new Consulta("21/03/2026", "Chequeo", "Sano", 15));
-        h.registrarConsulta(new Consulta("22/03/2026", "Fractura", "Yeso aplicado", 60));
+        h.registrarConsulta(new Consulta("1/02/2025", "Fiebre", "Tratamiento con reposo",    30));
+        h.registrarConsulta(new Consulta("12/11/2022", "Dolor", "Sano", 15));
+        h.registrarConsulta(new Consulta("2/12/2026", "Hematoma", "Yeso aplicado", 60));
 
         // 3. Crear 2 Medicos
-        Medico m1 = new Medico("50", "JOSE", 30, "300123", "General", "TP-001", 101);
-        Medico m2 = new Medico("30", "ANA", 50, "300456", "Pediatria", "TP-002", 202);
+        Medico m1 = new Medico( "Ortopeda", "1231", 201, "MARUAN", "1223", 23, "2323");
+        Medico m2 = new Medico("Medicina interna", "13232", 302, "CHRISTOFER", "2323", 32, "33332");
 
         // 4. Atender y demostrar dependencia
         System.out.println("--- Reporte del Hospital ---");

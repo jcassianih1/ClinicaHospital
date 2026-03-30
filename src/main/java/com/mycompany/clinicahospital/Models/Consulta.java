@@ -17,7 +17,7 @@ public class Consulta {
     public Consulta() {
     }
 
-    public Consulta(String fecha, String motivo, String diagnostico) {
+    public Consulta(String fecha, String motivo, String diagnostico, int duracionMinutos) {
         this.fecha = fecha;
         this.motivo = motivo;
         this.diagnostico = diagnostico;
@@ -58,7 +58,8 @@ public class Consulta {
 
     @Override
     public String toString() {
-        return "Consulta{" + "fecha=" + fecha + ", motivo=" + motivo + ", diagnostico=" + diagnostico + '}';
+        return "Consulta{" + "fecha=" + fecha + ", motivo=" + motivo + ", diagnostico=" + diagnostico +
+                ", duracionMinutos= " + duracionMinutos + " }";
     }
     
     
